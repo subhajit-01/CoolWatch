@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e3a34;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.upper-section{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* position: relative; */
+}
+span{
+    font-size: 100px;
+    opacity: 70%;
+}
+.hour , .minutes, .seconds{
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    position: relative;
+    opacity: 70%;
+}
+.hour::before{
+    content: 'HOUR';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+ .minutes::before {
+    content: 'MIN';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.seconds::before {
+    content: 'SEC';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* 
+.ms{
+    width: 80px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+
+
+/* buttom part --- */
+
+.lower-section{
+    width: 100vw;
+    height: calc(100vh-70vh);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 30px;
+}
+
+.start ,.stop,.reset{
+    all: unset;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: rgba(20, 21, 22, 0.3) 0px 1px 2px 0px, rgba(18, 20, 21, 0.2) 0px 1px 3px 1px;
+    justify-content: center;
+    display:flex;
+    align-items:center;
+    cursor: pointer;
+    transition:all .4s linear;
+    opacity: 70%;
+}
+
+.reset:hover{
+    background-color: #23413a;
+}
+.start:hover{
+    background-color: #23413a;
+}
+.stop:hover{
+    background-color: #23413a;
+}
+
+
